@@ -2,6 +2,7 @@ import 'package:firebase_auth_demo/firebase_options.dart';
 import 'package:firebase_auth_demo/screens/home_screen.dart';
 import 'package:firebase_auth_demo/screens/login_email_password_screen.dart';
 import 'package:firebase_auth_demo/screens/login_screen.dart';
+import 'package:firebase_auth_demo/screens/onboarding_screen.dart';
 import 'package:firebase_auth_demo/screens/phone_screen.dart';
 import 'package:firebase_auth_demo/screens/profile_screen.dart';
 import 'package:firebase_auth_demo/screens/signup_email_password_screen.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const LoginScreen(),
+      home: const OnBoardingScreen(),
       routes: {
         EmailPasswordSignup.routeName: (context) => const EmailPasswordSignup(),
         EmailPasswordLogin.routeName:(context) => const EmailPasswordLogin(),
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         HomePage.routeName:(context) => HomePage(),
         LoginScreen.routeName:(context) => const LoginScreen(),
         ProfilePage.routeName : (context) => const ProfilePage(),
+        OnBoardingScreen.routeName : (context) => const OnBoardingScreen(),
       },
     );
   }
