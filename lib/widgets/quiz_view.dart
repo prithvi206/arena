@@ -10,7 +10,7 @@ class QuizView extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = Applayout.getSize(context);
     return SizedBox(
-      width: size.width,
+      width: 350,
       height: 200,
       // ignore: avoid_unnecessary_containers
       child: Container(
